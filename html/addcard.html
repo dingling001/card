@@ -8,14 +8,20 @@
     <title>添加我的卡</title>
     <script type="text/javascript" src="../assets/js/fontSize.min.js"></script>
     <link rel="stylesheet" href="../assets/css/weui.min.css">
+    <link rel="stylesheet" href="../assets/css/jquery-weui.min.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1062395_22qr74rcs36.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 <div class="top"></div>
-<div class="user_info add_box">
-    <div class="add_input"><label>卡号</label><input type="number" placeholder="请输入卡号" maxlength="18"></div>
-</div>
+<form class="user_info add_box" action="">
+    <div class="add_input"><label>卡号：</label><input type="number" placeholder="请输入卡号" maxlength="18" id="card_num">
+    </div>
+    <div class="add_input"><label>地址：</label><input type="text" placeholder="请输入地址" maxlength="18" id="card_add"></div>
+    <div class="add_input textarea"><label>备注：</label><textarea name="" id="" placeholder="备注"
+                                                                id="card_tips"></textarea></div>
+    <button type="submit" class="my_card_btn" id="add_btn"><a href="javascript:void (0)">保存</a></button>
+</form>
 </body>
 </html>
 <script type="text/javascript" src="../assets/js/jquery-2.1.0.js"></script>
@@ -23,5 +29,27 @@
 <script type="text/javascript" src="../assets/js/common.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
+        $.toast.prototype.defaults.duration = 1500
+        $('#add_btn').click(function () {
+            var card_num = $('#card_num').val();
+            var card_add = $('#card_add').val();
+            var card_tips = $('#card_tips').val();
+            if (card_num == '') {
+                $.toast('请输入卡号', 'cancel')
+            } else if (card_add == '') {
+                $.toast('请输入地址', 'cancel')
+            } else if (card_tips == '') {
+                $.toast('请添加备注', 'cancel')
+
+            } else {
+                $.post({
+                    url: '',
+                    data: {},
+                    success: function (res) {
+
+                    }
+                })
+            }
+        })
     })
 </script>

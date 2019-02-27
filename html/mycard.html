@@ -67,8 +67,8 @@
             $(this).hide().next().show();
             // TO DO
         })
-        $('.card_list').on('click', '.card_item', function () {
-            window.location.href = ''
+        $('.card_list').on('click', '.card_item', function (id) {
+            window.location.href = 'card_detail.html?id='+id
             // TO DO
         })
     })

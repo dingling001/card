@@ -5,34 +5,27 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首页</title>
+    <title>我的卡详情</title>
     <script type="text/javascript" src="../assets/js/fontSize.min.js"></script>
     <link rel="stylesheet" href="../assets/css/weui.min.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1062395_22qr74rcs36.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <style type="text/css">
+        body {
+            background-color: #fff;
+        }
+    </style>
 </head>
 <body>
-<div class="top"></div>
-<div class="user_info">
-    <div class="img_box"><img src="../assets/img/code.png" alt=""></div>
-    <div>幼儿园扛把子</div>
-</div>
-<div class="card_box">
-    <div id="no_card">
-        <div class="card_title">绑定卡</div>
-        <div class="no_card">您未设置默认卡</div>
-        <div class="iconfont iconqiabao"></div>
+<div class="card_list">
+    <div class="card_item">
+        <div class="card_address">天津市西青区张家窝镇灵泉北里8号楼</div>
+        <div class="card_num">8888 8888 8888 888</div>
+        <div class="card_tips">备注：天津市西青区张家窝镇灵泉北里8号楼</div>
+        <div class="card_tips">12/02/01</div>
     </div>
-    <!--<div id="refresh">-->
-        <!--<div class="code_box">-->
-            <!--<img src="../assets/img/code.png" alt="">-->
-        <!--</div>-->
-        <!--<div class="refresh_box"><span class="iconfont iconshuaxin"></span>点击刷新</div>-->
-    <!--</div>-->
-    <!--<div class="my_card_btn"><a href="mycard.html">我的卡</a></div>-->
-    <div class="my_card_btn"><a href="addcard.html">去绑卡</a></div>
-
 </div>
+<div class="my_card_btn card_add"><a href="javascript:void (0)">删除</a></div>
 </body>
 </html>
 <script type="text/javascript" src="../assets/js/jquery-2.1.0.js"></script>
@@ -40,8 +33,8 @@
 <script type="text/javascript" src="../assets/js/common.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        // 点击刷新事件
-        $('#refresh').click(function () {
+        // 删除
+        $('.card_add').click(function () {
             // TO DO
         })
     })
