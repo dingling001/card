@@ -17,6 +17,40 @@ body {
     background-color: #F3F3F3;
 }
 
+input {
+    border: 0;
+    outline: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+}
+
+textarea {
+    border: 0;
+    outline: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    display: block;
+    border: 0;
+    background: none;
+}
+
+.weui_toast {
+    font-size: 12px;
+}
+
+.weui_icon_toast {
+    font-size: 14px;
+}
+
+.weui_icon_toast:before {
+    font-size: 38px;
+}
+
 /*首页部分*/
 .top {
     height: 2.4rem;
@@ -93,7 +127,7 @@ body {
 
 .my_card_btn a {
     display: inline-block;
-    padding: 0.21rem 0;
+    padding: 0.1rem 0;
     color: #fff;
     width: 100%;
     font-size: 15px;
@@ -185,12 +219,12 @@ body {
     font-size: 12px;
     background-color: #fff;
     border-radius: 0.1rem;
-    display: none;
+    /*display: none;*/
 }
 
-.card_item:first-child .card_btn {
-    display: block;
-}
+/*.card_item:first-child .card_btn {*/
+/*display: block;*/
+/*}*/
 
 .card_btn:active {
     opacity: 0.7;
@@ -205,5 +239,71 @@ body {
     min-height: 97vh;
     margin-bottom: 0;
 }
-.add_input{
+
+.add_input {
+    display: flex;
+    align-items: center;
+    height: .7rem;
+    line-height: 0.7rem;
+    padding: 0 .38rem 0 .25rem;
+    margin: 0 0 .3rem 0;
+    color: #222;
 }
+
+.add_input input {
+    flex: 1;
+    background-color: #f8f8f8;
+    padding: 0 .15rem;
+    border-radius: .1rem;
+}
+
+.textarea {
+    align-items: inherit;
+    height: auto;
+}
+
+.textarea textarea {
+    height: 1.51rem;
+    flex: 1;
+    background-color: #f8f8f8;
+    padding: .15rem;
+    border-radius: .1rem;
+}
+
+.card_person {
+    display: block;
+    right: .2rem;
+    bottom: .45rem;
+    border-radius: .1rem;
+}
+
+.card_person span {
+    border-radius: .1rem;
+}
+
+.btn_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .8rem;
+}
+
+.btn_item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    color: #222;
+}
+
+.icon_box {
+    height: .8rem;
+    width: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #478FE2;
+    color: #fff;
+    margin-bottom: .2rem;
+}
+

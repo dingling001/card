@@ -8,7 +8,7 @@
     <title>我的卡</title>
     <script type="text/javascript" src="../assets/js/fontSize.min.js"></script>
     <link rel="stylesheet" href="../assets/css/weui.min.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1062395_22qr74rcs36.css">
+    <link rel="stylesheet" href="../assets/fonts/iconfont.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <style type="text/css">
         body{
@@ -67,8 +67,8 @@
             $(this).hide().next().show();
             // TO DO
         })
-        $('.card_list').on('click', '.card_item', function () {
-            window.location.href = ''
+        $('.card_list').on('click', '.card_item', function (id) {
+            window.location.href = 'card_detail.html?id='+id
             // TO DO
         })
     })
