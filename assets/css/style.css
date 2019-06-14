@@ -54,7 +54,7 @@ button {
 /*首页部分*/
 .top {
     height: 2.4rem;
-    background: linear-gradient(0deg, rgba(0, 198, 251, 0.69), rgba(0, 91, 234, 0.69));
+    /*background: linear-gradient(0deg, rgba(0, 198, 251, 0.69), rgba(0, 91, 234, 0.69));*/
 }
 
 .user_info {

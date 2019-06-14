@@ -11,34 +11,55 @@
     <link rel="stylesheet" href="../assets/fonts/iconfont.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
-        .card_box{
-            margin: -30px auto 0 auto;
-            padding: 10px 0  50px  0 ;
+        .card_box {
+            padding: 10px 0 50px 0;
+            background: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .new_card {
+            background-image: url("../assets/img/bg.png");
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-position: bottom;
+            background-size: cover;
+        }
+
+        .code_box {
+            border-radius: 0.1rem;
+            box-shadow: 0 5px 0.4rem 0 rgba(221, 220, 219, 0.82);
         }
     </style>
 </head>
 <body>
-<div class="top"></div>
-<!--<div class="user_info">-->
+<div class="new_card">
+
+    <div class="top"></div>
+    <!--<div class="user_info">-->
     <!--<div class="img_box"><img src="../assets/img/code.png" alt=""></div>-->
     <!--<div>幼儿园扛把子</div>-->
-<!--</div>-->
-<div class="card_box">
-    <!--<div id="no_card">-->
+    <!--</div>-->
+    <div class="card_box">
+        <!--<div id="no_card">-->
         <!--<div class="card_title">绑定卡</div>-->
         <!--<div class="no_card">您未设置默认卡</div>-->
         <!--<div class="iconfont iconqiabao"></div>-->
-    <!--</div>-->
-    <div style="font-size: 13px;text-align: center;padding: 10px 0">长按保存发送给好友</div>
-    <div id="refresh">
-        <div class="code_box">
-            <img src="../assets/img/code.png" alt="">
+        <!--</div>-->
+        <div style="font-size: 13px;text-align: center;padding: 10px 0">长按保存发送好友</div>
+        <div id="refresh">
+            <div class="code_box">
+                <img src="../assets/img/code.png" alt="">
+            </div>
+            <!--<div class="refresh_box"><span class="iconfont iconshuaxin"></span>点击刷新</div>-->
         </div>
-        <!--<div class="refresh_box"><span class="iconfont iconshuaxin"></span>点击刷新</div>-->
+        <div class="my_card_btn"><a href="mycard.html">我的卡</a></div>
+        <!--<div class="my_card_btn"><a href="addcard.html">去绑卡</a></div>-->
     </div>
-    <!--<div class="my_card_btn"><a href="mycard.html">我的卡</a></div>-->
-    <!--<div class="my_card_btn"><a href="addcard.html">去绑卡</a></div>-->
-
 </div>
 </body>
 </html>
